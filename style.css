@@ -153,44 +153,7 @@ body
     text-decoration: none;
 }
 
-@media (max-width: 800px)
-{
-    .wrapper
-    {
-        width: 90vw;
-        margin: auto;
-    }
-
-    .title
-    {
-        font-size: 52px;
-    }
-
-    .input-box, .button-calculate
-    {
-        width: 100%;
-    }
-
-    .result-max-min-messages
-    {
-        width: 80vw;
-    }
-
-    .disclaimer
-    {
-        position: initial;
-        border: none;
-        margin: 1em;
-        text-align: center;
-    }
-
-    .input-fields
-    {
-        margin: 3em 0 5em 0;
-    }
-}
-
-@media (orientation: landscape)
+@media (max-width: 1250px)
 {
     .disclaimer
     {
@@ -200,8 +163,32 @@ body
         text-align: center;
     }
 
-    .input-fields
+    @media (max-width: 800px)
     {
-        margin: 4em 0 5em 0;
+        .wrapper
+        {
+            width: 90vw;
+            margin: auto;
+        }
+
+        .title
+        {
+            font-size: 52px;
+        }
+
+        .input-box, .button-calculate
+        {
+            width: 100%;
+        }
+
+        .result-max-min-messages
+        {
+            width: 80vw;
+        }
+
+        .input-fields
+        {
+            margin: 3em 0 5em 0;
+        }
     }
 }
