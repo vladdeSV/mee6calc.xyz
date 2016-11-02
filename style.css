@@ -127,17 +127,81 @@ body
 
 .disclaimer
 {
+    border: 2px dotted #fff;
+    position: fixed;
     display: block;
-    position: absolute;
+    padding: 5px;
     bottom: 1em;
     left: 1em;
+
     text-align: left;
-    color: #ddf4ff;
     font-size: 13px;
+
+    color: #ddf4ff;
+    background-color: rgba(0, 140, 186, 0.8);
+    transition-duration: 0.5s;
+}
+
+.disclaimer:hover
+{
+    opacity: 0.2;
 }
 
 .disclaimer a
 {
     color: #8ec8e3;
     text-decoration: none;
+}
+
+@media (max-width: 800px)
+{
+    .wrapper
+    {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .title
+    {
+        font-size: 52px;
+    }
+
+    .input-box, .button-calculate
+    {
+        width: 100%;
+    }
+
+    .result-max-min-messages
+    {
+        width: 80vw;
+    }
+
+    .disclaimer
+    {
+        position: initial;
+        border: none;
+        margin: 1em;
+        text-align: center;
+    }
+
+    .input-fields
+    {
+        margin: 3em 0 5em 0;
+    }
+}
+
+@media (orientation: landscape)
+{
+    .disclaimer
+    {
+        position: initial;
+        border: none;
+        margin: 1em;
+        text-align: center;
+    }
+
+    .input-fields
+    {
+        margin: 4em 0 5em 0;
+    }
 }
